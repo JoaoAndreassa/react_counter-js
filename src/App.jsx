@@ -13,11 +13,11 @@ export const App = () => {
   };
 
   const increase = () => {
-    const current = count;
+    const wasMultipleOf5 = count % 5 === 0;
 
     addOne();
 
-    if (current % 5 === 0) {
+    if (wasMultipleOf5) {
       add100();
     }
   };
