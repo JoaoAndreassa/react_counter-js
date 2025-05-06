@@ -13,12 +13,13 @@ export const App = () => {
   };
 
   const increase = () => {
-    // Salvamos o valor atual antes de adicionar 1
-    if (count % 5 === 0) {
-      add100();
-    }
+    const current = count;
 
     addOne();
+
+    if (current % 5 === 0) {
+      add100();
+    }
   };
 
   return (
